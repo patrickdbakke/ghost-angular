@@ -1,0 +1,21 @@
+{
+  "name": "ghost-angular",
+  "description":"ghost-angular",
+  "repository":"https://github.com/patrickdbakke/ghost-angular",
+  "version": "0.0.1",
+  "folders":{
+    "app":""
+  },
+  "devDependencies": {
+    "bower": "*",
+    "load-grunt-tasks": "*",
+    "grunt": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-jshint": "*",
+    "jshint-stylish": "*",
+    "grunt-contrib-watch": "*",
+    "livereload": "*",
+    "grunt-html2js": "*",
+    "grunt-contrib-connect": "*"
+  }
+}

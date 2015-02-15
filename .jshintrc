@@ -1,0 +1,26 @@
+{
+    "bitwise": true,
+    "camelcase": false,
+    "curly": true,
+    "eqeqeq": true,
+    "freeze": true,
+    "immed": true,
+    "indent": 4,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "undef": true,
+    "unused": true,
+
+    "esnext": true,
+    "eqnull": true,
+    "strict": true,
+
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "globals": {
+          "_": false,
+          "angular": false
+    }
+}
