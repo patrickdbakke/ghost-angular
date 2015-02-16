@@ -1,0 +1,18 @@
+<section class="author-profile inner">
+    <figure class="author-image" ng-if="user.image">
+        <div class="img" ng-style="{'background-image': 'url(' + user.image + ')'}"><span class="hidden">{{user.name}}'s Picture</span></div>
+    </figure>
+    <h1 class="author-title">{{user.name}}</h1>
+    <h2 class="author-bio" ng-if="author.bio">{{bio}}</h2>
+    <div class="author-meta">
+        <span ng-if="author.location" class="author-location icon-location">{{user.location}}</span>
+        <span ng-if="author.website" class="author-link icon-link"><a href="{{user.website}}"></a></span>
+        <span class="author-stats">
+            <i class="icon-stats"></i>
+            <span>{{user.posts.meta.pagination.total || 0}}</span>
+            <span ng-if="user.posts.meta.pagination.total == 1">post</span>
+            <span ng-if="user.posts.meta.pagination.total !== 1">posts</span>
+        </span>
+    </div>
+</section>
+<div posts="user.posts"></div>

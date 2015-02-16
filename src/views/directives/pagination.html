@@ -1,0 +1,5 @@
+<nav class="pagination" role="pagination">
+    <span class="newer-posts" ng-click="previousPage()" ng-if="totalPages > 1 && currentPage !== 1">← Newer Posts</span>
+    <span class="page-number">Page {{currentPage}} of {{totalPages}}</span>
+    <span class="older-posts" ng-click="nextPage()" ng-if="totalPages > 1 && currentPage !== totalPages">Older Posts →</span>
+</nav>

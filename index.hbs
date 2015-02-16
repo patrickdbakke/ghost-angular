@@ -15,7 +15,8 @@
         <script src="//localhost:35729/livereload.js"></script>
     </head>
     <body ng-app="ghost-angular">
-        <div ui-view="content" id="content"></div>
+        <div ui-view></div>
+
         <script type='text/javascript' src='src/js/bower_components/lodash/lodash.js'></script> 
         <script type='text/javascript' src='src/js/bower_components/angular/angular.js'></script> 
         <script type='text/javascript' src='src/js/bower_components/angular-ui-router/release/angular-ui-router.js'></script> 
@@ -27,6 +28,18 @@
         <script type='text/javascript' src="src/js/templates.js"></script>
         <!-- endbuild -->
     
+        <script type='text/javascript' src="src/js/services/posts.js"></script>
+        <script type='text/javascript' src="src/js/services/settings.js"></script>
+        <script type='text/javascript' src="src/js/services/users.js"></script>
+
+        <script type='text/javascript' src="src/js/directives/excerpt.js"></script>
+        <script type='text/javascript' src="src/js/directives/posts.js"></script>
+        <script type='text/javascript' src="src/js/directives/pagination.js"></script>
+
+        <script type='text/javascript' src="src/js/controllers/blog.js"></script>
+        <script type='text/javascript' src="src/js/controllers/posts.js"></script>
+        <script type='text/javascript' src="src/js/controllers/post.js"></script>
+        <script type='text/javascript' src="src/js/controllers/user.js"></script>
 
         <script type='text/javascript' src="src/js/config.js"></script>
         <script type='text/javascript' src="src/js/routes.js"></script>

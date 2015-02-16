@@ -1,0 +1,29 @@
+<div>
+    <div class="extra-pagination inner">
+        <div pagination="postData"></div>
+    </div>
+    <article ng-repeat="post in postsData.posts" class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="#/blog/posts/{{post.slug}}">{{post.title}}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p excerpt="post.html" words="26">
+                <a class="read-more" href="#/blog/posts{{post.slug}}">&raquo;</a>
+            </p>
+        </section>
+        <footer class="post-meta">
+            <a href="#/blog/users/{{post.author.slug}}">
+                <img class="author-thumb" ng-if="post.author.image" ng-src="{{post.author.image}}" alt="Author image" nopin="nopin" />
+                {{post.author.name}}
+            </a>
+            <span ng-if="post.tags.length > 0">
+                <span> on </span>
+                <span ng-repeat="tag in post.tags">
+                    <a href="#/blog/tags/{{tag.slug}}">{{tag.name}}</a>
+                </span>
+            </span>
+            <time class="post-date" datetime="{{post.date | date : 'yyyy-MM-dd'}}">{{post.published_at | date : 'dd MMMM yyyy'}}</time>
+        </footer>
+    </article>
+    <div pagination="postData"></div>
+</div>
