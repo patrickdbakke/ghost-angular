@@ -6,6 +6,9 @@
   "folders":{
     "app":""
   },
+  "author": {
+    "email": "patrickdbakke@gmail.com"
+  },
   "devDependencies": {
     "bower": "*",
     "load-grunt-tasks": "*",
@@ -17,5 +20,8 @@
     "livereload": "*",
     "grunt-html2js": "*",
     "grunt-contrib-connect": "*"
+  },
+  "config": {
+    "posts_per_page": 25
   }
 }
